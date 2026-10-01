@@ -1,23 +1,16 @@
 # El-laberinto-del-abismo-
 El jugador controla a un robot  que debe reparar su nave espacial después de una tormenta cósmica. para lograrlo, recoge componentes perdidos, alinea plataformas y esquiva fallos mecánicos y sistemas de seguridad activados por error.
 # Fase 1. Análisis
--Requerimientos funcionales
-° Evolución paso a paso: el juego enseña primero a caminar y saltar, luego a usar habilidades y al final a enfrentarte a un jefe, lo que ayuda a que el niño aprenda a jugar sin abrumarse.
+Este videojuego presenta una propuesta  adaptada para un público de entre 8 y 12 años. A través de la historia de un robot explorador que debe reparar su nave tras el paso de una tormenta espacial, la experiencia guía al jugador mediante una curva de aprendizaje constante y accesible. A lo largo de sus 2 fases, el sistema introduce, uso de propulsores de plasma y culminando en un enfrentamiento estratégico contra una inteligencia artificial descontrolada.  
 
-° Objetivo claros en cada nivel: en cada etapa hay una tarea sencilla de entender: recoger 3 fusibles, conseguir filtros o activar la computadora.
+Asimismo, herramientas como un escudo temporal de 3 segundos, la obtención de vidas extra al recolectar recursos y la inclusión de coleccionables para personalizar al personaje aportan dinamismo. En conjunto, se trata de una propuesta clara en su planteamiento orientada a ofrecer un entretenimiento didáctico y motivador.
+# Fase 2. Diagrama flujo
+ Muestra con más claridad la estructura del videojuego desde el menú de inicio hasta la resolución final de la partida. El flujo inicial organiza las opciones entre la jugabilidad directa, la gestión de componentes (como células de combustible ) y el acceso a las habilidades especiales (propulsor y escudo). A lo largo de las dos fases, el sistema establece una secuencia donde cada nivel evalúa el cumplimiento de sus objetivos específicos, guiando al usuario por rutas de retorno bien definidas para reiniciar el nivel en caso de error y asegurar así un bucle de aprendizaje continuo.
+ 
+En el tramo final, resuelve las condiciones de victoria y derrota durante el enfrentamiento contra la inteligencia artificial corrupta. La validación del estado del jugador ya sea mediante la pérdida de vidas que conduce a la pantalla de Game Over o la activación exitosa de los tres interruptores asegurar el flujo fluido hacia el reinicio de la nave y el despliegue de puntuaciones. 
+# Fase 3. Código del Juego
+El código estructura el juego  mediante comandos de entrada, salida y control de flujo.Por consola se administra con la función print() para desplegar diálogos y menús, mientras que la recepción de datos se gestiona con input(), utilizando transformaciones como int() para procesar datos numéricos y métodos como .lower() o .upper() para normalizar respuestas de texto ya sea en másyuscula o minúscula. El programa se organiza mediante de funciones con def (tales como bienvenida(), instrucciones(), creditos() y jugar()) que delimitan bloques de código específicos y aplican return para gestionar los retornos en el flujo. 
 
-° Recompensas que ayudan a jugar: si juntas 50 células de combustible te dan una vida extra, lo que premia al niño por explorar y le da más oportunidades si se equivoca.
-
-° Habilidad de protección fácil: el escudo dura 3 segundos y te salva de recibir daño por accidente, ideal para evitar que un niño se frustre si choca con un enemigo.
-
--Requerimientos no funcionales
-° Tiempo de respuesta adecuado: las habilidades especiales, como el propulsor y el escudo, deben activarse de manera inmediata cuando el jugador las utilice.
-
-° Estabilidad del juego: el sistema debe conservar correctamente las vidas del robot, el tiempo disponible y el progreso dentro de cada nivel sin errores.
-
-° Rendimiento gráfico: el movimiento de plataformas, drones, enemigos y efectos visuales debe mostrarse de forma fluida durante la partida.
-
-° Mantenibilidad: los niveles y sectores de la nave deben estar organizados de forma que sea posible agregar nuevos escenarios o recompensas en futuras versiones.
-# Fase 2. Diseño
-https://icvh-my.sharepoint.com/:f:/g/personal/202205271_icvh_edu_gt1/IgD-V5bg5MusTbDOtrsYen-MAQ1iKxrwFEtDIllW7rq5_Ss?e=051EjO  
-Diagrama de flujo de Video Juego
+A su vez, se basa en un bucle principal while True: que mantiene activo el menú del sistema hasta que se solicita la salida mediante la instrucción break. La verificación de estados y avance entre niveles se evalúa con estructuras condicionales if, elif y else, las cuales emplean operadores de comparación (==, >=, <=) para validar los requerimientos del usuario, tales como la recolección de artículos, respuestas correctas o la cantidad de vidas restantes antes de declarar un avance o una pantalla de Game Over.
+# Fase 4. Entrega 
+Los procesos para crear una cuenta en esta plataforma son sencillos no tienen tanta complejidad como otras aplicaciones lo que facilita su utilización.Al acceder a GitHub, el usuario solo debe registrar un correo electrónico, crear una contraseña y verificar su identidad para comenzar a gestionar repositorios de código. Esta accesibilidad permite subir archivos, controlar las versiones del proyecto y colaborar en equipo de manera rápida, optimizando la entrega final sin complicaciones técnicas en el sistema.
