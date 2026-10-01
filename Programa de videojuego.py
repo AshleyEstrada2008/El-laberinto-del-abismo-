@@ -37,9 +37,9 @@ def jugar():
     fusibles = int(input("¿Cuántos fusibles encontraste?: "))
 
     if fusibles >= 3:
-        print("✅ Objetivo completado.")
+        print(" Objetivo completado.")
     else:
-        print("❌ No encontraste suficientes fusibles.")
+        print(" No encontraste suficientes fusibles.")
         return
 
     # NIVEL 2
@@ -47,9 +47,9 @@ def jugar():
     respuesta = input("¿Activar propulsor? (si/no): ")
 
     if respuesta.lower() == "si":
-        print("✅ Propulsor activado.")
+        print("Propulsor activado.")
     else:
-        print("❌ No puedes avanzar.")
+        print(" No puedes avanzar.")
         return
 
     # NIVEL 3
@@ -57,9 +57,9 @@ def jugar():
     filtros = int(input("¿Cuántos filtros conseguiste?: "))
 
     if filtros >= 2:
-        print("✅ Filtros instalados.")
+        print(" Filtros instalados.")
     else:
-        print("❌ La nave no tiene suficiente aire.")
+        print(" La nave no tiene suficiente aire.")
         return
 
     # NIVEL 4
@@ -68,12 +68,12 @@ def jugar():
     codigo = input("Ingrese el código de activación (ABISMO): ")
 
     if codigo.upper() == "ABISMO":
-        print("✅ Computadora activada.")
+        print(" Computadora activada.")
     else:
-        print("❌ Código incorrecto.")
+        print(" Código incorrecto.")
         return
 
-    print("\n🎉 FASE 1 COMPLETADA")
+    print("\n FASE 1 COMPLETADA")
 
     print("\n===== FASE 2 =====")
 
@@ -84,10 +84,10 @@ def jugar():
 
     if combustible >= 50:
         vidas += 1
-        print("✅ Vida extra obtenida.")
+        print("Vida extra obtenida.")
         print("Vidas actuales:", vidas)
     else:
-        print("✅ Continúas sin vida extra.")
+        print(" Continúas sin vida extra.")
 
     # NIVEL 6
     print("\nNIVEL 6: ESCUDO DE PROTECCIÓN")
@@ -95,10 +95,10 @@ def jugar():
     escudo = input("¿Activar escudo? (si/no): ")
 
     if escudo.lower() == "si":
-        print("✅ Escudo activado por 3 segundos.")
+        print(" Escudo activado por 3 segundos.")
     else:
         vidas -= 1
-        print("⚠ Daño recibido.")
+        print(" Daño recibido.")
         print("Vidas restantes:", vidas)
 
     if vidas <= 0:
@@ -115,7 +115,7 @@ def jugar():
     respuesta = int(input("Respuesta: "))
 
     if respuesta == 40:
-        print("\n🏆 ¡HAS DERROTADO A LA IA CORRUPTA!")
+        print("\n ¡HAS DERROTADO A LA IA CORRUPTA!")
         print("PUNTAJE FINAL: 1000")
     else:
         print("\n☠ GAME OVER")
